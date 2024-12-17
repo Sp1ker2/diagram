@@ -1,9 +1,100 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" version="25.0.3">
-  <diagram name="Страница — 1" id="ZT0imyStEBtWzyzmH-l_">
+  <diagram name="Страница — 1" id="JN3famd9STLAPXUfgyzU">
     <mxGraphModel>
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="2" value="Начало" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="228" y="8" width="113" height="49" as="geometry" />
+        </mxCell>
+        <mxCell id="3" value="Открываем почтовый ящик" style="rounded=1;arcSize=40;strokeWidth=2" vertex="1" parent="1">
+          <mxGeometry x="191" y="129" width="187" height="66" as="geometry" />
+        </mxCell>
+        <mxCell id="4" value="Прочитать новое письмо" style="rounded=1;arcSize=40;strokeWidth=2" vertex="1" parent="1">
+          <mxGeometry x="179" y="268" width="212" height="49" as="geometry" />
+        </mxCell>
+        <mxCell id="5" value="Отправитель известен?" style="rhombus;strokeWidth=2;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="175" y="389" width="220" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="6" value="Прочитать содержимое" style="rounded=1;arcSize=40;strokeWidth=2" vertex="1" parent="1">
+          <mxGeometry x="8" y="681" width="204" height="49" as="geometry" />
+        </mxCell>
+        <mxCell id="7" value="Проверить вложения" style="rounded=1;arcSize=40;strokeWidth=2" vertex="1" parent="1">
+          <mxGeometry x="314" y="681" width="186" height="49" as="geometry" />
+        </mxCell>
+        <mxCell id="8" value="Скачать вложения" style="rounded=1;arcSize=40;strokeWidth=2" vertex="1" parent="1">
+          <mxGeometry x="411" y="802" width="166" height="49" as="geometry" />
+        </mxCell>
+        <mxCell id="9" value="Завершить" style="rounded=1;arcSize=40;strokeWidth=2" vertex="1" parent="1">
+          <mxGeometry x="353" y="923" width="109" height="49" as="geometry" />
+        </mxCell>
+        <mxCell id="10" value="Ответить на письмо" style="rounded=1;arcSize=40;strokeWidth=2" vertex="1" parent="1">
+          <mxGeometry x="21" y="802" width="177" height="49" as="geometry" />
+        </mxCell>
+        <mxCell id="11" value="Завершить" style="rounded=1;arcSize=40;strokeWidth=2" vertex="1" parent="1">
+          <mxGeometry x="55" y="923" width="109" height="49" as="geometry" />
+        </mxCell>
+        <mxCell id="12" value="Шаг 1" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=0.99;entryX=0.5;entryY=0;" edge="1" parent="1" source="2" target="3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="13" value="Шаг 2" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=-0.01;" edge="1" parent="1" source="3" target="4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="14" value="Шаг 3" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=0.98;entryX=0.5;entryY=0;" edge="1" parent="1" source="4" target="5">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="15" value="Да" style="curved=1;startArrow=none;endArrow=block;exitX=0;exitY=0.92;entryX=0.5;entryY=0;" edge="1" parent="1" source="5" target="6">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="110" y="645" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="16" value="Нет" style="curved=1;startArrow=none;endArrow=block;exitX=0.92;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="5" target="7">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="407" y="645" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="17" value="Есть вложения" style="curved=1;startArrow=none;endArrow=block;exitX=0.69;exitY=0.99;entryX=0.5;entryY=0;" edge="1" parent="1" source="7" target="8">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="493" y="766" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="18" value="Нет вложений" style="curved=1;startArrow=none;endArrow=block;exitX=0.32;exitY=0.99;entryX=0.18;entryY=0;" edge="1" parent="1" source="7" target="9">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="321" y="766" />
+              <mxPoint x="321" y="887" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="19" value="Скачано" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=0.99;entryX=0.81;entryY=0;" edge="1" parent="1" source="8" target="9">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="493" y="887" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="20" value="Прочитано" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=0.99;entryX=0.5;entryY=0;" edge="1" parent="1" source="6" target="10">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="21" value="Ответ отправлен" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=0.99;entryX=0.5;entryY=0;" edge="1" parent="1" source="10" target="11">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
